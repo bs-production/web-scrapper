@@ -1,0 +1,19 @@
+<div class="row" ng-if="site">
+    <div class="col col-md-8 col-md-offset-2">
+        <div class="col-md-6">
+            <a ng-href="{{site.previewPath}}" class="btn btn-primary btn-block" target="_blank">
+                <span class="glyphicon glyphicon-search"></span> Open in new tab
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="{{site.downloadPath}}" class="btn btn-success btn-block" target="_blank">
+                <span class="glyphicon glyphicon-download-alt"></span> Download archive
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row height-100-percents">
+    <div class="col col-md-8 col-md-offset-2 iframe-wrap">
+        <iframe class="iframe" ng-src="{{site.previewPath}}"></iframe>
+    </div>
+</div>
